@@ -142,17 +142,36 @@
     <script>
         function fun1() {
 
-  if ( document.myForm.firstname.value == "" && document.myForm.lname.value == "" && document.myForm.sel.value == ""
-      && document.myForm.email.value=="" && document.myForm.pwd.value=="" && document.myForm.cpwd.value == "" &&
-      document.myForm.dob.value == "" && document.myForm.mob.value == "" && document.myForm.check.value == ""
-   ) {
-    alert("please fill details");
-    return false;
+  if ( document.myForm.firstname.value == ""){
+    alert("please fill firstname");
+  }
+  if ( document.myForm.lname.value == ""){
+    alert("please fill lastname");
+  } 
+  if ( document.myForm.sel.value == ""){
+    alert("please fill select option");
+  }  
+  if (  document.myForm.email.value==""){
+    alert("please fill select option");
+  }  
+  if (  document.myForm.pwd.value==""){
+    alert("please fill password");
+  } 
+  if (  document.myForm.cpwd.value==""){
+    alert("please fill confirm password");
+  }
+  if ( document.myForm.dob.value == ""){
+    alert("please fill dob");
+  }
+  if ( document.myForm.mob.value == "" ){
+    alert("please fill mobile");
+  }
+  if ( !document.myForm.check.checked){
+    alert("checkbox should not be empty");
   }
 
   else{
 alert('success')
-return true;
   }
   
 }
