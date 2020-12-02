@@ -97,6 +97,7 @@
                     <label for="pwd">Password</label><br>
                     <span>*</span>
                     <input type="password" class="form-control" id="pwd" name="pwd" required>
+                    
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
@@ -169,12 +170,20 @@
   if ( !document.myForm.check.checked){
     alert("checkbox should not be empty");
   }
-
+  var pass1=document.getElementById('pwd').value;
+  var pass2=document.getElementById('cpwd').value;
+  if(pass1==pass2){
+      alert('passwords match');
+  }
+  else{
+      alert('password doesnt match')
+  }
   else{
 alert('success')
   }
   
 }
+
 
 
     </script>
